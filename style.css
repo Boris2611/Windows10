@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    background-image: url("img/bg.jpg");
+    background-size: 100%;
+    background-position: 0px -20px;
+    height: 600px;
+}
+
+
+
+.icon {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 3px;
+}
+
+
+.iconIMG {
+    position: relative;
+    left: 20px;
+    width: 60px;
+    margin: 10px;
+}
+
+.iconNAME {
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    background-color: rgba(17, 17, 17, 0.788);
+    width: 100%;
+}
+
+.navIMG {
+    width: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+.window {
+    position: absolute;
+    width: 80%;
+    height: 340px;
+    background-color: white;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -40%;
+    top: 100px;
+    display: none;
+}
+
+.windowFull {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 0px;
+}
+
+
+
+
+.nav {
+    height: 40px;
+    background-color: whitesmoke;
+}
+
+.exit {
+    height: 40px;
+    width: 60px;
+    float: right;
+}
+
+.exit:hover {
+    background-color: tomato;
+}
+
+.full {
+    height: 40px;
+    width: 60px;
+    float: right;
+}
+
+.full:hover {
+    background-color:turquoise;
+}
+
+.low {
+    height: 40px;
+    width: 60px;
+    float: right;
+}
+
+.low:hover {
+    background-color: rebeccapurple;
+}
+
+
+
+
+
+
+
+
+#windows {
+    position: absolute;
+    left: 0;
+    width: 300px;
+    height: 80%;
+    background-color:  rgba(17, 17, 17, 0.788);
+    bottom: 40px;
+    visibility: hidden;
+}
+
+#divNav:hover {
+    background-color: black;
+    width: 50px;
+    height: 40px;
+}
+
+
+#rightClick {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(226, 221, 221);
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background-image: url("img/mobileBG.jpg");
+        background-size: 100%;
+        background-position: 0px -20px;
+    }
+  }
