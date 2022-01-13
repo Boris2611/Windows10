@@ -34,10 +34,10 @@ let windowsOpen = 2;
 
 function windows() {
     if (windowsOpen%2 == 0) {
-        document.getElementById("windows").style.visibility = "visible";
+        document.getElementById("windows").style.left = "0px";
     }
     else {
-        document.getElementById("windows").style.visibility = "hidden";
+        document.getElementById("windows").style.left = "-400px";
     }
     windowsOpen += 1;
 }
@@ -57,14 +57,20 @@ if (document.addEventListener) {
     }, false);
   }
 
-
   function printMousePos(event) {
       x = event.clientX;
       y = event.clientY;
 
-      document.getElementById("rightClick").style.display = "block";
-      document.getElementById("rightClick").style.top = y-300 + "px";
-      document.getElementById("rightClick").style.left = x-200 + "px";
+    document.getElementById("rightClick").style.display = "block";
+    document.getElementById("rightClick").style.top = y-300 + "px";
+    document.getElementById("rightClick").style.left = x-200 + "px";
+
+      if (y < 300) {
+        document.getElementById("rightClick").style.top = y + "px";
+      }
+      if (x < 200) {
+        document.getElementById("rightClick").style.left = x + "px";
+      }
   }
 
 function screenClick() {

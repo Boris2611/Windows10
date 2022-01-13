@@ -4,6 +4,7 @@ body {
     background-size: 100%;
     background-position: 0px -20px;
     height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -62,6 +63,7 @@ footer {
     margin-left: -40%;
     top: 100px;
     display: none;
+    text-align: center;
 }
 
 .windowFull {
@@ -119,18 +121,39 @@ footer {
 
 #windows {
     position: absolute;
-    left: 0;
+    left: -400px;
     width: 300px;
     height: 80%;
     background-color:  rgba(17, 17, 17, 0.788);
     bottom: 40px;
-    visibility: hidden;
+    transition: 0.7s;
 }
+
 
 #divNav:hover {
     background-color: black;
     width: 50px;
     height: 40px;
+}
+
+#time,#language {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    color: white;
+    font-size: small;
+    padding: 5px;
+}
+
+
+
+#language {
+    padding: 12px;
+    right: 100px;
+}
+
+#time:hover, #language:hover {
+    background-color: rgba(0, 0, 0, 0.432);
 }
 
 
