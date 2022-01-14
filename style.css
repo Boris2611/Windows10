@@ -343,6 +343,10 @@ hr {
 
   @media only screen and (max-width: 800px) {
     
+    body {
+        background-image: url("img/bg2.jpg");
+    }
+
     #googleImg {
         width: 60%;
     }
@@ -350,4 +354,6 @@ hr {
     #googleSearch {
         width: 60%;
     }
+
+
   }
