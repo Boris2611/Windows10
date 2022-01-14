@@ -78,9 +78,11 @@ function exitMyWork() {
 function fullMyWork() {
     if (myWorkwin % 2 == 0) {
         document.getElementById("myWork").className = "windowFull";
+        document.getElementById("projects").id = "projectsFull";
     }
     else {
         document.getElementById("myWork").className = "window";
+        document.getElementById("projectsFull").id = "projects";
     }
     myWorkwin += 1;
 }

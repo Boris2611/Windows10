@@ -93,6 +93,7 @@ footer {
     display: none;
     text-align: center;
     box-shadow: 0px 0px 5px 5px #111;
+
 }
 
 .windowFull {
@@ -104,6 +105,15 @@ footer {
     text-align: center;
 }
 
+#projects {
+    overflow-y: scroll;
+    height: 360px;
+}
+
+#projectsFull {
+    overflow-y: scroll;
+    height: 537px;
+}
 
 .nav {
     height: 40px;
@@ -244,21 +254,16 @@ hr {
 
 
 
-.scrollable {
-    overflow-y: scroll;
-    width: 100%;
-    height: 360px;
-    
-}
 
 
 .informations {
     position: relative;
     width: 100%;
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(212, 211, 211);
     top: 40px;
     height: 40px;
     z-index: 1;
+    color: #555;
 }
 
 #information1, #information2, #information3 {
