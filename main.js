@@ -212,5 +212,33 @@ function searchGoogle() {
 // ---------- PROJECTS ------------------
 
 function project1() {
+    window.open("https://simpleblackjack.vercel.app/");
+}
+
+function project2() {
+    window.open("https://braincall.vercel.app/");
+}
+
+function project3() {
+    window.open("https://flappykill.vercel.app/");
+}
+
+function project4() {
+    window.open("https://mastermind-omega.vercel.app/");
+}
+
+function project5() {
+    window.open("https://xo-ebon.vercel.app/");
+}
+
+function project6() {
+    window.open("https://bitclicker.vercel.app/");
+}
+
+function project7() {
     window.open("https://virusrush.vercel.app/");
+}
+
+function project8() {
+    window.open("https://chat-bot-nine.vercel.app/");
 }

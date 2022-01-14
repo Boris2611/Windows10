@@ -316,6 +316,8 @@ hr {
 .projectNAME {
     position: absolute;
     left: 35%;
+    top: 4px;
+    font-size: larger;
     
 }
 
