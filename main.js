@@ -77,7 +77,7 @@ function exitMyWork() {
 
 function fullMyWork() {
     if (myWorkwin % 2 == 0) {
-        document.getElementById("myWork").className = "windowFull";
+        document.getElementById("myWork").className = "windowFull2";
         document.getElementById("projects").id = "projectsFull";
     }
     else {
