@@ -58,11 +58,33 @@ footer {
 }
 
 
+#googleImg {
+    width: 30%;
+    margin-top: 50px;
+}
+
+#googleSearch {
+    width: 30%;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px #999 solid;
+}
+
+#search {
+    position: relative;
+    width: 200px;
+    top: 20px;
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+
 
 .window {
     position: absolute;
     width: 80%;
-    height: 340px;
+    height: 400px;
     background-color: white;
     margin: 0 auto;
     left: 50%;
@@ -70,6 +92,7 @@ footer {
     top: 100px;
     display: none;
     text-align: center;
+    box-shadow: 0px 0px 5px 5px #111;
 }
 
 .windowFull {
@@ -78,9 +101,8 @@ footer {
     height: 100%;
     background-color: white;
     top: 0px;
+    text-align: center;
 }
-
-
 
 
 .nav {
@@ -88,6 +110,17 @@ footer {
     background-color: whitesmoke;
 }
 
+.navText {
+    display: inline;
+    position: absolute;
+    font-size: large;
+    left: 20px;
+}
+
+.close {
+    width: 20px;
+    padding: 10px;
+}
 .exit {
     height: 40px;
     width: 60px;
@@ -202,10 +235,39 @@ hr {
     background-color: whitesmoke;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1200px) {
     body {
         background-image: url("img/mobileBG.jpg");
         background-size: 100%;
         background-position: 0px -20px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    
+    #googleImg {
+        width: 60%;
+    }
+
+    #googleSearch {
+        width: 60%;
     }
   }

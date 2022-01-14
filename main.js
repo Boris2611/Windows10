@@ -1,6 +1,11 @@
 let open;
-
 let thisPCwin = 2;
+let googlewin = 2;
+let contactwin = 2;
+let myWorkwin = 2;
+
+
+// --------- This PC --------------
 
 function thisPC() {
     document.getElementById("thisPC").style.display = "block";
@@ -20,6 +25,73 @@ function fullPC() {
     thisPCwin += 1;
 }
 
+// --------- GOOGLE -------------
+
+function google() {
+    document.getElementById("google").style.display = "block";
+}
+
+function exitGoogle() {
+    document.getElementById("google").style.display = "none";
+}
+
+function fullGoogle() {
+    if (googlewin % 2 == 0) {
+        document.getElementById("google").className = "windowFull";
+    }
+    else {
+        document.getElementById("google").className = "window";
+    }
+    googlewin += 1;
+}
+
+// --------- CONTACT --------------
+
+function contactMe() {
+    document.getElementById("contactMe").style.display = "block";
+}
+
+function exitContact() {
+    document.getElementById("contactMe").style.display = "none";
+}
+
+function fullContact() {
+    if (contactwin % 2 == 0) {
+        document.getElementById("contactMe").className = "windowFull";
+    }
+    else {
+        document.getElementById("contactMe").className = "window";
+    }
+    contactwin += 1;
+}
+
+// --------- My Work --------------
+
+function myWork() {
+    document.getElementById("myWork").style.display = "block";
+}
+
+function exitMyWork() {
+    document.getElementById("myWork").style.display = "none";
+}
+
+function fullMyWork() {
+    if (myWorkwin % 2 == 0) {
+        document.getElementById("myWork").className = "windowFull";
+    }
+    else {
+        document.getElementById("myWork").className = "window";
+    }
+    myWorkwin += 1;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -36,6 +108,8 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#icon3').draggable();
 });
+
+
 
 
 
@@ -102,6 +176,16 @@ function refresh() {
 
 
 
+// --------- Google Search ----------
+let search = ""
 
+function searchGoogle() {
+    search = document.getElementById("googleSearch").value;
+    search = "https://www.google.com/search?q=" + search;
+
+    window.open(search)
+
+
+}
 
 
