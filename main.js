@@ -109,6 +109,11 @@ $(document).ready(function(){
     $('#icon3').draggable();
 });
 
+$(document).ready(function(){
+    $('#icon4').draggable();
+});
+
+
 
 
 
@@ -189,3 +194,21 @@ function searchGoogle() {
 }
 
 
+
+// ---------- DATE & TIME -----------------
+
+
+
+
+
+
+
+
+
+
+
+// ---------- PROJECTS ------------------
+
+function project1() {
+    window.open("https://virusrush.vercel.app/");
+}
