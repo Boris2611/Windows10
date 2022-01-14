@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="main.js"></script>
+    <title>Jankovic Boris</title>
 </head>
 <body onclick="screenClick()">
     
-    <div id="icon1" class="icon" onclick="thisPC()">
+    <div id="icon1" class="icon" ondblclick="thisPC()">
         <img class="iconIMG" src="img/computer-icon.png">
         <p class="iconNAME">ThisPC</p>
     </div>
@@ -19,11 +23,19 @@
         <p class="iconNAME">Google Chrome</p>
     </div>
 
-    <div id="icon3" class="icon">
-        <img class="iconIMG" src="img/lol.png">
-        <p class="iconNAME">League Of Legends</p>
+    <div id="icon3" class="icon" >
+        <a href="https://simpleblackjack.vercel.app/">
+        <img class="iconIMG" src="img/chips.png">
+        <p class="iconNAME">BlackJack</p>
+        </a>
     </div>
 
+    <div id="icon4" class="icon" >
+        <a href="https://virusrush.vercel.app/">
+        <img class="iconIMG" src="img/virus.png">
+        <p class="iconNAME">Virus Rush</p>
+        </a>
+    </div>
 
 
 
@@ -53,16 +65,29 @@
         <div id="divNav" onclick="windows()"><img class="navIMG" src="img/WinNav.png"></div>
         <div id="time">00:00 AM<br>26/11/2002</div>
         <div id="language">ENG</div>
+        <div id="sound"><img class="smallIcon" src="img/sound.png"></div>
     </footer>
 
 
     <div id="windows">
 
     </div>
+        
+    <div id="rightClick">
+        <p class="rightClickItem">View</p>
+        <p class="rightClickItem">Sort By</p>
+        <p class="rightClickItem" onclick="refresh()">Refresh</p>
+        <hr>
+        <p class="rightClickItem">Paste</p>
+        <p class="rightClickItem">Paste Shortcut</p>
+        <hr>
+        <p class="rightClickItem">New</p>
+        <hr>
+        <p class="rightClickItem">Display Settings</p>
+        <p class="rightClickItem">Personalize</p>
 
-    <div id="rightClick"></div>
+    </div>
 
 
-    <script src="main.js"></script>
 </body>
 </html>

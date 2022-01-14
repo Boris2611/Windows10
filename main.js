@@ -23,12 +23,24 @@ function fullPC() {
 
 
 
+// -------------- DRAGGABLE -----------
+
+$(document).ready(function(){
+    $('#icon1').draggable();
+});
+
+$(document).ready(function(){
+    $('#icon2').draggable();
+});
+
+$(document).ready(function(){
+    $('#icon3').draggable();
+});
 
 
 
 
-
-
+// ------------ WINDOW -----------
 
 let windowsOpen = 2;
 
@@ -62,13 +74,13 @@ if (document.addEventListener) {
       y = event.clientY;
 
     document.getElementById("rightClick").style.display = "block";
-    document.getElementById("rightClick").style.top = y-300 + "px";
+    document.getElementById("rightClick").style.top = y-325 + "px";
     document.getElementById("rightClick").style.left = x-200 + "px";
 
       if (y < 300) {
         document.getElementById("rightClick").style.top = y + "px";
       }
-      if (x < 200) {
+      if (x < 220) {
         document.getElementById("rightClick").style.left = x + "px";
       }
   }
@@ -76,3 +88,20 @@ if (document.addEventListener) {
 function screenClick() {
     document.getElementById("rightClick").style.display = "none";
 }
+
+
+// ----------- REFRESH -----------
+
+function refresh() {
+    location.reload();
+}
+
+
+
+
+
+
+
+
+
+
